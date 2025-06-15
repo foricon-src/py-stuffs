@@ -177,4 +177,4 @@ for item in st.session_state.history:
     st.markdown(f"""
                 <h3>{'You' if type == 'input' else 'Assistant'}</h3>
                 <p>{text}</p>
-                {'''<span onclick='alert("Liked")'>Like</span>''' if type == 'res' else ''}""")
+                {'''<span onclick='alert("Liked")'>Like</span>''' if type == 'res' else ''}""", unsafe_allow_html=True)
