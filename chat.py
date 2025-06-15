@@ -183,5 +183,4 @@ for item in st.session_state.history:
     text = item[1]
     st.markdown(f"""
                 <h4>{'You' if type == 'input' else 'Assistant'}</h4>
-                <p>{text}</p>
-                {'''<span>Like</span>''' if type == 'res' else ''}""", unsafe_allow_html=True)
+                <p>{text}</p>""", unsafe_allow_html=True)
