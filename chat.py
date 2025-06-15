@@ -166,8 +166,8 @@ st.markdown("""
             <h1 style='text-align: center'>Welcome to Foricon Assistant</h1>
             <p style='text-align: center'>Lorem ipsum</p>
             <style>
-                .element-container + .element-container {
-                    padding-top: 20px;
+                .element-container:not(:first-child) + .element-container {
+                    padding-top: 15px;
                     border-top: 2px solid gray;
                 }
             </style>""", unsafe_allow_html=True)
@@ -182,6 +182,6 @@ for item in st.session_state.history:
     type = item[0]
     text = item[1]
     st.markdown(f"""
-                <h6>{'You' if type == 'input' else 'Assistant'}</h6>
+                <h5>{'You' if type == 'input' else 'Assistant'}</h5>
                 <p>{text}</p>
                 {'''<span onclick='alert("Liked")'>Like</span>''' if type == 'res' else ''}""", unsafe_allow_html=True)
