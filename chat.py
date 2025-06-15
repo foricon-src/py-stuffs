@@ -168,10 +168,13 @@ st.markdown("""
 input_text = st.chat_input("Nhập nội dung")
 
 if input_text:
-    st.session_state.history.append(input_text)
+    st.session_state.history.append(["input", input_text ])
     res = model.generate_content(input_text)
-    st.session_state.history.append(res.text)
+    st.session_state.history.append(["res", res.text ])
 
-for message in st.session_state.history:
-    st.markdown(message)
-    st.divider()
+for item in st.session_state.history:
+    [ type, text ] = item
+    st.markdown(f"""
+                <h3>{'You' if type == 'input' else 'Assistant'}</h3>
+                <p>{text}</p>
+                {'''<span onclick='alert("Liked")'>Like</span>''' if type == 'res' else ''}""")
