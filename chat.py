@@ -19,7 +19,8 @@ model = genai.GenerativeModel(
     3. Nguời quản lí, phát triển: Nguyễn Nam (Nickname: Namplus23)
     4. Trang web: https://foricon-dev.blogspot.com
     5. Phiên bản hiện tại: Beta 1.7.2 (Cập nhật 08/06/2025)
-    6. Foricon là gì:
+    6. Hỗ trợ: HTML, CSS, JavaScript
+    7. Foricon là gì:
         - Là một thư viện biểu tượng (Font icon, hoặc icon font), gồm có 610 biểu tượng hoàn toàn miễn phí, và có 3 family và 2 kiểu (style) (tính đến phiên bản Beta 1.6.6):
             + Family: Regular, Duotone, Sharp (Chưa hỗ trợ)
             + Style: Solid, Outline
@@ -31,7 +32,7 @@ model = genai.GenerativeModel(
             + Foricon Media (Trước phiên bản Beta 1.7.2 thì có tên là My Content Library): Dịch vụ lưu trữ các tệp ảnh, video và audio
         - Dù các icon là miễn phí nhưng số lượt xem trang - pageviews (Số lần mà Foricon Package được tải) bị giới hạn, có thể mở rộng bằng đăng ký Foricon Pro
         - Để dùng Foricon Package (Hay trước đây là FIS), người dùng phải thêm tên miền (domain) của trang của mình. Gới Free cho phép 2 tên miền, có thể mở rộng bằng đăng ký Foricon Pro. Mục đích của việc này là ngăn chặn việc người khác có thể copy mã <script> và sử dụng, việc này sẽ làm tăng số pageview không mong muốn.
-    7. Sử dụng Foricon:
+    8. Sử dụng Foricon:
         a. Import
             Để import vào một trang web hay dự án nhất định truy cập Trang web Foricon > Tài khoản > Foricon Package
             Đoạn code:
@@ -147,7 +148,7 @@ model = genai.GenerativeModel(
             | toggleStyle(style1Name, style2Name)                  | style1Name, style2Name: Style của icon được hỗ trợ                                  | Chuyển đổi giữa 2 style                                                       | ficon.toggleStyle("solid", "outline")   |                                                                             |
             | toggleIcon(icon1Name, icon2Name)                     | icon1Name, icon2Name: Tên của icon hỗ trợ                                           | Chuyển đổi giữa 2 icon                                                        | ficon.toggleIcon("home", "user")        |                                                                             |
             | setAnimation(name, speed?)                           | animation: Tên của animation được hỗ trợ; speed: Tốc độ của animation được hỗ trợ   | Đặt animation và tốc độ                                                       | ficon.setAnimation("spin", "fast")      |                                                                             |
-            | setSize(sizeName)                                    | sizeName: Tên kích thước được hỗ trợ                                                | Đặt kích thước icon                                                           | ficon.setSize("largest")                |                                                                             |
+            | setSize(sizeName)                                    | sizeName: Tên kích thước được hỗ trợ                                                | Đặt kích thước (phông chữ) icon                                               | ficon.setSize("largest")                |                                                                             |
             | setScale(scaleName)                                  | scaleName: Tên tỉ lệ được hỗ trợ                                                    | Đặt scale icon (không ảnh hưởng layout)                                       | ficon.setScale("larger")                |                                                                             |
             | rotate(value)                                        | value: Số hoặc giá trị string được hỗ trợ                                           | Xoay icon                                                                     | ficon.rotate(90)                        |                                                                             |
             | toggleIconOnHover(activeIconName, element? = this)   | activeIconName: Tên của icon được hỗ trợ, element: Element kích hoạt sự kiện        | Chuyển sang icon khác khi di chuột vào element và chuyển lại khi di chuột ra  | ficon.toggleIconOnHover("house")        |                                                                             |
@@ -155,7 +156,7 @@ model = genai.GenerativeModel(
             | toggleStyleOnHover(activeStyleName, element? = this) | activeIconName: Style của icon được hỗ trợ, element: Element kích hoạt sự kiện      | Chuyển sang style khác khi di chuột vào element và chuyển lại khi di chuột ra | ficon.toggleStyleOnHover("outline")     |                                                                             |
             | removeToggleStyleOnHover(element = this)             | element: Element cần xóa sự kiện                                                    | Xóa toggleStyleOnHover của element                                            | ficon.removeToggleStyleOnHover()        |                                                                             |
 
-    8. Không hỗ trợ những chức năng, lĩnh vực và thông tin không liên quan đến Foricon và các cách sử dụng các icon của Foricon.
+    9. Không hỗ trợ những chức năng, lĩnh vực và thông tin không liên quan đến Foricon và các cách sử dụng các icon của Foricon. Không hỗ trợ tạo các code không liên quan đến Foricon
     """
 )
 
