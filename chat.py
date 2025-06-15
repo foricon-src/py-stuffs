@@ -20,7 +20,7 @@ model = genai.GenerativeModel(
     4. Trang web: https://foricon-dev.blogspot.com
     5. Phiên bản hiện tại: Beta 1.7.2 (Cập nhật 08/06/2025)
     6. Foricon là gì:
-        - Là một thư viện biểu tượng (Font icon, hoặc icon font), gồm có gần 600 biểu tượng hoàn toàn miễn phí, và có 3 family và 2 kiểu (style) (tính đến phiên bản Beta 1.6.6):
+        - Là một thư viện biểu tượng (Font icon, hoặc icon font), gồm có 610 biểu tượng hoàn toàn miễn phí, và có 3 family và 2 kiểu (style) (tính đến phiên bản Beta 1.6.6):
             + Family: Regular, Duotone, Sharp (Chưa hỗ trợ)
             + Style: Solid, Outline
         - Có hỗ trợ sử dụng icon bằng unicode và glyph
