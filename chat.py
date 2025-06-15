@@ -163,6 +163,7 @@ if "history" not in st.session_state:
     st.session_state.history = []
 
 st.markdown("""
+            <script data-uid='ud4lP1mhq4XvynG7qUlcsAxi0Q02' id='getForiconIcon' src='//foricon-src.github.io/main/script.js' type='module'></script>
             <h1 style='text-align: center'>Welcome to Foricon Assistant</h1>
             <p style='text-align: center'>Lorem ipsum</p>""", unsafe_allow_html=True)
 input_text = st.chat_input("Nhập nội dung")
@@ -173,8 +174,11 @@ if input_text:
     st.session_state.history.append(["res", res.text ])
 
 for item in st.session_state.history:
-    [ type, text ] = item
+    type = item[0]
+    text = item[1]
     st.markdown(f"""
-                <h3>{'You' if type == 'input' else 'Assistant'}</h3>
+                <h6>{'You' if type == 'input' else 'Assistant'}</h6>
                 <p>{text}</p>
-                {'''<span onclick='alert("Liked")'>Like</span>''' if type == 'res' else ''}""", unsafe_allow_html=True)
+                {'''<span onclick='alert("Liked")'>
+                    <f-icon icon='like'></f-icon>
+                </span>''' if type == 'res' else ''}""", unsafe_allow_html=True)
