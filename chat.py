@@ -166,9 +166,20 @@ st.markdown("""
             <h1 style='text-align: center'>Welcome to Foricon Assistant</h1>
             <p style='text-align: center'>Lorem ipsum</p>
             <style>
-                .element-container:not(:first-child) + .element-container {
-                    padding-top: 15px;
-                    border-top: 2px solid gray;
+                .element-container {
+                    &:not(:first-child) + .element-container {
+                        padding-top: 15px;
+                        border-top: 2px solid gray;
+                    }
+                    span.like {
+                        &:before {
+                            content: 'Like';
+                        }
+                        &.active:before {
+                            content: 'Liked';
+                            color: orange;
+                        }
+                    }
                 }
             </style>""", unsafe_allow_html=True)
 input_text = st.chat_input("Nhập nội dung")
@@ -182,6 +193,6 @@ for item in st.session_state.history:
     type = item[0]
     text = item[1]
     st.markdown(f"""
-                <h5>{'You' if type == 'input' else 'Assistant'}</h5>
+                <h4>{'You' if type == 'input' else 'Assistant'}</h4>
                 <p>{text}</p>
-                {'''<span onclick='alert("Liked")'>Like</span>''' if type == 'res' else ''}""", unsafe_allow_html=True)
+                {'''<span class='like' onclick='this.classList.toggle("active")'></span>''' if type == 'res' else ''}""", unsafe_allow_html=True)
