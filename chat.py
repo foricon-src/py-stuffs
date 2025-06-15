@@ -164,7 +164,7 @@ if "history" not in st.session_state:
 
 st.markdown("""
             <h1 style='text-align: center'>Welcome to Foricon Assistant</h1>
-            <p style='text-align: center'>Lorem ipsum</p>""")
+            <p style='text-align: center'>Lorem ipsum</p>""", unsafe_allow_html=True)
 input_text = st.chat_input("Nhập nội dung")
 
 if input_text:
