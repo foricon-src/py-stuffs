@@ -162,8 +162,9 @@ model = genai.GenerativeModel(
 if "history" not in st.session_state:
     st.session_state.history = []
 
-st.title("Welcome to Foricon Assistant")
-st.text("Lorem ipsum")
+st.markdown("""
+            <h1 style='text-align: center'>Welcome to Foricon Assistant</h1>
+            <p style='text-align: center'>Lorem ipsum</p>""")
 input_text = st.chat_input("Nhập nội dung")
 
 if input_text:
