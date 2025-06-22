@@ -175,6 +175,10 @@ st.markdown("""
                     padding-top: 15px;
                     margin-top: 30px;
                     border-top: 2px solid gray;
+                    
+                    button + button {
+                        margin-left: 10px
+                    }
                 }
             </style>""", unsafe_allow_html=True)
 input_text = st.chat_input("Nhập nội dung gửi cho FA")
@@ -188,5 +192,4 @@ for item in st.session_state.history:
     st.markdown(f"""
                 <h4>{'Bạn' if item[0] == 'input' else 'FA'}</h4>
                 <p>{item[1]}</p>
-                <button>Thích</button>
-                <button>Sao chép</button>""", unsafe_allow_html=True)
+                {"<button>Thích</button><button>Sao chép</button>" if item[0] == "res" else ""}""", unsafe_allow_html=True)
