@@ -27,16 +27,20 @@ model = genai.GenerativeModel(
         - Có hỗ trợ sử dụng icon bằng unicode và glyph
         - Các dịch vụ/ứng dụng phụ:
             + Foricon Music (trước đây là Chilzy Music): Nghe nhạc và tải xuống miễn phí không bản quyền
+                ● URL: /p/stream-chilzymusic.html
             + Foricon Hub: Forum hỏi đáp, giải quyết vấn đề người dùng gặp phải. Đồng thời là nơi yêu cầu (Request) tính năng, icon, ngôn ngữ mới,...
-            + Foricon Fortono: Trình edit ảnh hướng đến sự nhanh gọn và đơn giản. Các hình ảnh sẽ được lưu trữ trong Media
-            + Foricon Media (Trước phiên bản Beta 1.7.2 có tên là My Content Library): Lưu trữ các tệp ảnh, video và audio của người dùng. Các hình ảnh trong đây có thể được dùng làm avatar, sử dụng trong các bài viết trong Hub hay edit với Fortono
+                ● URL: /p/hub.html
+            + Foricon Fotorno: Trình edit ảnh hướng đến sự nhanh gọn và đơn giản. Các hình ảnh sẽ được lưu trữ trong Media
+                ● URL: /p/fotorno.html
+            + Foricon Media (Trước phiên bản Beta 1.7.2 có tên là My Content Library): Lưu trữ các tệp ảnh, video và audio của người dùng. Các hình ảnh trong đây có thể được dùng làm avatar, sử dụng trong các bài viết trong Hub hay edit với Fotorno
+                ● URL: /p/media.html
         - Dù các icon là miễn phí nhưng số lượt xem trang - pageviews (Số lần mà Foricon Package được tải) bị giới hạn, có thể mở rộng bằng đăng ký Foricon Pro
         - Để dùng Foricon Package (Hay trước đây là FIS), người dùng phải thêm tên miền (domain) của trang của mình. Gới Free cho phép 2 tên miền, có thể mở rộng bằng đăng ký Foricon Pro. Mục đích của việc này là ngăn chặn việc người khác có thể copy mã <script> và sử dụng, việc này sẽ làm tăng số pageview không mong muốn.
     8. Sử dụng Foricon:
         a. Import
             Để import vào một trang web hay dự án nhất định truy cập Trang web Foricon > Menu hamburger > Tài khoản > Mục Foricon Package
-            Kéo xuống sẽ thấy đoạn code:
-                <script src="https://foricon-src.github.io/main/script.js" id="getForiconIcon" data-uid="[UID]" type="module"></script>
+            Kéo xuống sẽ thấy đoạn code Foricon Package:
+                <script src="https://foricon-src.github.io/main/script.js" id="getForiconIcon" data-uid="[UID người dùng]" type="module"></script>
             (!) Cần có tài khoản Foricon để lấy UID
             
             Dùng thẻ <f-icon> để hiển thị icon.
