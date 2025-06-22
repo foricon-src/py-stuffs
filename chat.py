@@ -173,6 +173,7 @@ st.markdown("""
             <style>
                 .element-container:not(:first-child) + .element-container {
                     padding-top: 15px;
+                    margin-top: 15px;
                     border-top: 2px solid gray;
                 }
             </style>""", unsafe_allow_html=True)
