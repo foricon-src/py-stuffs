@@ -185,5 +185,6 @@ if input_text:
 
 for item in st.session_state.history:
     st.markdown(f"""
-                <h4>{'You' if item[0] == 'input' else 'Assistant'}</h4>
-                <p>{item[1]}</p>""", unsafe_allow_html=True)
+                <h4>{'Bạn' if item[0] == 'input' else 'FA'}</h4>
+                <p>{item[1]}</p>
+                <button>Like</button>""", unsafe_allow_html=True)
