@@ -176,6 +176,9 @@ st.markdown("""
                     margin-top: 30px;
                     border-top: 2px solid gray;
                     
+                    p:last-child {
+                        margin-bottom: 0;
+                    }
                     button + button {
                         margin-left: 10px
                     }
