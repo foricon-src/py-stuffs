@@ -191,5 +191,5 @@ if input_text:
 for item in st.session_state.history:
     st.markdown(f"""
                 <h4>{'Bạn' if item[0] == 'input' else 'FA'}</h4>
-                <p>{item[1]}</p>
-                {"<button>Thích</button><button>Sao chép</button>" if item[0] == "res" else ""}""", unsafe_allow_html=True)
+                <p>{item[1]}</p>{"""
+                <button>Thích</button><button>Sao chép</button>""" if item[0] == "res" else ""}""", unsafe_allow_html=True)
