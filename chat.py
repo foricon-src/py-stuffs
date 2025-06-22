@@ -178,7 +178,7 @@ st.markdown("""
                         border-top: 2px solid gray;
                         
                         button + button {
-                            margin-left: 10px
+                            margin-left: 5px;
                         }
                     }
                     p:last-child {
