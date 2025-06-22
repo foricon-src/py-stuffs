@@ -168,7 +168,7 @@ if "history" not in st.session_state:
     st.session_state.history = []
 
 st.markdown("""
-            <h1 style='text-align: center'>Chào mừng đến với Foricon Assistant</h1>
+            <h2 style='text-align: center'>Chào mừng đến với Foricon Assistant</h2>
             <p style='text-align: center'>FA có thể giúp và hướng dẫn bạn về Foricon</p>
             <style>
                 .element-container:not(:first-child) + .element-container {
