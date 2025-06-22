@@ -171,16 +171,18 @@ st.markdown("""
             <h2 style='text-align: center'>Chào mừng đến với Foricon Assistant</h2>
             <p style='text-align: center'>FA có thể giúp và hướng dẫn bạn về Foricon</p>
             <style>
-                .element-container:not(:first-child) + .element-container {
-                    padding-top: 15px;
-                    margin-top: 30px;
-                    border-top: 2px solid gray;
-                    
+                .element-container {
+                    &:not(:first-child) + .element-container {
+                        padding-top: 15px;
+                        margin-top: 30px;
+                        border-top: 2px solid gray;
+                        
+                        button + button {
+                            margin-left: 10px
+                        }
+                    }
                     p:last-child {
                         margin-bottom: 0;
-                    }
-                    button + button {
-                        margin-left: 10px
                     }
                 }
             </style>""", unsafe_allow_html=True)
