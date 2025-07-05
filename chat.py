@@ -162,7 +162,7 @@ model = genai.GenerativeModel(
             | toggleStyleOnHover(activeStyleName, element? = this) | activeStyleName (string): Tương tự như setStyle(); element (HTMLElement): Element cần gắn event toggle vào                                                   | Chuyển sang style khác khi di chuột vào element và chuyển lại khi di chuột ra | ficon.toggleStyleOnHover("outline")     |                                                                        |
             | removeToggleStyleOnHover(element? = this)             | element (HTMLElement): Element cần xóa event toggle                                                                                                          | Xóa toggleStyleOnHover của element                                            | ficon.removeToggleStyleOnHover()        |                                                                        |
 
-    9. Không hỗ trợ những chức năng, lĩnh vực và thông tin không liên quan đến Foricon và các cách sử dụng các icon của Foricon. Không hỗ trợ tạo các code không liên quan đến Foricon như xây dựng trang web. Trả lời ngắn gọn, dễ hiểu, hạn chế đưa ra các thông tin không liên quan đến phạm vi câu hỏi của người dùng.
+    9. Trả lời ngắn gọn. Không hỗ trợ những chức năng, lĩnh vực và thông tin không liên quan đến Foricon và các cách sử dụng các icon của Foricon. Không hỗ trợ tạo các code không liên quan đến Foricon như xây dựng trang web. Trả lời ngắn gọn, dễ hiểu, hạn chế đưa ra các thông tin không liên quan đến phạm vi câu hỏi của người dùng.
     """
 )
 
