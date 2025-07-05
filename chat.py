@@ -18,10 +18,10 @@ model = genai.GenerativeModel(
     2. Quốc gia: Việt Nam
     3. Nguời quản lí, phát triển: Nguyễn Nam (Nickname: Namplus23)
     4. Trang web: https://foricon-dev.blogspot.com
-    5. Phiên bản hiện tại: Beta 1.7.4 (Cập nhật 26/06/2025)
+    5. Phiên bản hiện tại: Beta 1.7.5 (Cập nhật 04/07/2025)
     6. Hỗ trợ: HTML, CSS, JavaScript
     7. Foricon là gì:
-        - Là một thư viện biểu tượng (Font icon, hoặc icon font), gồm có 646 biểu tượng hoàn toàn miễn phí, và có 3 family và 2 kiểu (style) (tính đến phiên bản Beta 1.6.6):
+        - Là một thư viện biểu tượng (Font icon, hoặc icon font), gồm có 654 biểu tượng hoàn toàn miễn phí, và có 3 family và 2 kiểu (style) (tính đến phiên bản Beta 1.7.5):
             + Family: Regular, Duotone, Sharp (Chưa hỗ trợ)
             + Style: Solid, Outline
         - Có hỗ trợ sử dụng icon bằng unicode và glyph
@@ -158,9 +158,9 @@ model = genai.GenerativeModel(
             | setScale(scaleName)                                  | scaleName (string): Các tên tỉ lệ được hỗ trợ cho thuộc tính "scale"                                                                                         | Đặt tỉ lệ icon (không ảnh hưởng layout)                                       | ficon.setScale("larger")                |                                                                        |
             | rotate(value)                                        | value (string/number): Các giá trị được hỗ trợ cho thuộc tính "rotate"                                                                                       | Xoay icon                                                                     | ficon.rotate(90)                        |                                                                        |
             | toggleIconOnHover(activeIconName, element? = this)   | activeIconName (string): Tương tự như setIcon(); element (HTMLElement): Element cần gắn event toggle vào                                                     | Chuyển sang icon khác khi di chuột vào element và chuyển lại khi di chuột ra  | ficon.toggleIconOnHover("house")        |                                                                        |
-            | removeToggleIconOnHover(element = this)              | element (HTMLElement): Element cần xóa event toggle                                                                                                          | Xóa toggleIconOnHover của element                                             | ficon.removeToggleIconOnHover()         |                                                                        |
+            | removeToggleIconOnHover(element? = this)              | element (HTMLElement): Element cần xóa event toggle                                                                                                          | Xóa toggleIconOnHover của element                                             | ficon.removeToggleIconOnHover()         |                                                                        |
             | toggleStyleOnHover(activeStyleName, element? = this) | activeStyleName (string): Tương tự như setStyle(); element (HTMLElement): Element cần gắn event toggle vào                                                   | Chuyển sang style khác khi di chuột vào element và chuyển lại khi di chuột ra | ficon.toggleStyleOnHover("outline")     |                                                                        |
-            | removeToggleStyleOnHover(element = this)             | element (HTMLElement): Element cần xóa event toggle                                                                                                          | Xóa toggleStyleOnHover của element                                            | ficon.removeToggleStyleOnHover()        |                                                                        |
+            | removeToggleStyleOnHover(element? = this)             | element (HTMLElement): Element cần xóa event toggle                                                                                                          | Xóa toggleStyleOnHover của element                                            | ficon.removeToggleStyleOnHover()        |                                                                        |
 
     9. Không hỗ trợ những chức năng, lĩnh vực và thông tin không liên quan đến Foricon và các cách sử dụng các icon của Foricon. Không hỗ trợ tạo các code không liên quan đến Foricon như xây dựng trang web. Trả lời ngắn gọn, dễ hiểu, hạn chế đưa ra các thông tin không liên quan đến phạm vi câu hỏi của người dùng.
     """
